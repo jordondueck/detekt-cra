@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+<!-- PROJECT SHIELDS -->
+[![Version][version-shield]][version-url]
+[![Commit][commit-shield]][commit-url]
+[![Issues][issues-shield]][issues-url]
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/jordondueck/detekt-cra">
+    <img src="./images/detekt-logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-In the project directory, you can run:
+  <h3 align="center">detekt</h3>
 
-### `npm start`
+  <p align="center">
+    Facial Detection System
+    <br />
+    <a href="https://detekt-fds.netlify.app/">Try Application</a>
+    ·
+    <a href="https://github.com/jordondueck/detekt-cra/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jordondueck/detekt-cra/issues">Request Feature</a>
+  </p>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-### `npm test`
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Roadmap](#roadmap)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[![detekt Screen Shot][product-screenshot]](https://detekt-fds.netlify.app//)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+***detekt*** is a web application capable of detecting human faces within an image.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* [React.js](https://reactjs.org/) - Front-end JavaScript library
+* [Node.js](https://nodejs.org/) - JavaScript runtime environment
+* [Express.js](https://expressjs.com/) - Node.js web application framework
+* [Knex.js](https://knexjs.org/) - SQL query builder
+* [PostgreSQL](https://www.postgresql.org/) - Relational database management system (RDBMS)
+* [Clarifai Predict API](https://www.clarifai.com/models/face-detection-image-recognition-model-a403429f2ddf4b49b307e318f00e528b-detection) - Face detection model
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- ROADMAP -->
+## Roadmap
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* See the [Trello board](https://trello.com/b/mSeRGlfj) for a visual overview of the project.
+* See the [open issues](https://github.com/jordondueck/detekt-cra/issues) for a list of proposed features (and known issues).
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- CONTACT -->
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* LinkedIn - [https://linkedin.com/jordondueck](https://linkedin.com/jordondueck)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
 
-### Analyzing the Bundle Size
+* [Zero to Mastery](zero-to-mastery.github.io/) - Online web development courses
+* [Zachary Nelson @ unsplash.com](https://unsplash.com/@zacharytnelson) - Example image
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[commit-shield]: https://img.shields.io/github/last-commit/jordondueck/detekt-cra
+[commit-url]: https://github.com/jordondueck/detekt-cra/commits/master
+[version-shield]: https://img.shields.io/github/package-json/v/jordondueck/detekt-cra
+[version-url]: https://github.com/jordondueck/detekt-cra
+[issues-shield]: https://img.shields.io/github/issues/jordondueck/detekt-cra
+[issues-url]: https://github.com/jordondueck/detekt-cra/issues
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/jordondueck
+[product-screenshot]: images/detekt-preview.png
