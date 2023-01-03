@@ -1,0 +1,11 @@
+.input-group-text {
+  background-color: transparent;
+}
+
+.input-group-icon:hover {
+  cursor: pointer;
+}
+
+.input__prepend {
+  border-right: none;
+}

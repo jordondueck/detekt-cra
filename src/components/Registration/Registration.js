@@ -7,7 +7,7 @@ import Logo from "../Logo/Logo";
 const Registration = ({ handleRouteChange }) => {
   return (
     <Formik
-      initialValues={{ firstname: "", lastname: "", email: "", password: "" }}
+      initialValues={{ firstname: "", lastname: "", email: "", password: "", confirmpassword: "" }}
       validationSchema={RegisterSchema}
       onSubmit={(values, { setSubmitting }) => {
         fetch("https://detekt-api.onrender.com/register", {
@@ -35,7 +35,7 @@ const Registration = ({ handleRouteChange }) => {
         <Form className="form form--narrow form--border">
           <Logo />
           <h2 className="title title--medium">Register</h2>
-          <FormGroup className="form-group--wide" controlId="firstName">
+          <FormGroup className="form-group--wide form-group" controlId="firstName">
             <Field name="firstname">
               {({ field, meta }) => (
                 <FormControl
@@ -48,7 +48,7 @@ const Registration = ({ handleRouteChange }) => {
             </Field>
             <ErrorMessage className="error" name="firstname" component="div" />
           </FormGroup>
-          <FormGroup className="form-group--wide" controlId="lastName">
+          <FormGroup className="form-group--wide form-group" controlId="lastName">
             <Field name="lastname">
               {({ field, meta }) => (
                 <FormControl
@@ -61,7 +61,7 @@ const Registration = ({ handleRouteChange }) => {
             </Field>
             <ErrorMessage className="error" name="lastname" component="div" />
           </FormGroup>
-          <FormGroup className="form-group--wide" controlId="email">
+          <FormGroup className="form-group--wide form-group" controlId="email">
             <Field name="email">
               {({ field, meta }) => (
                 <FormControl
@@ -74,7 +74,7 @@ const Registration = ({ handleRouteChange }) => {
             </Field>
             <ErrorMessage className="error" name="email" component="div" />
           </FormGroup>
-          <FormGroup className="form-group--wide" controlId="password">
+          <FormGroup className="form-group--wide form-group" controlId="password">
             <Field name="password">
               {({ field, meta }) => (
                 <FormControl
@@ -87,6 +87,20 @@ const Registration = ({ handleRouteChange }) => {
             </Field>
             <ErrorMessage className="error" name="password" component="div" />
           </FormGroup>
+          <FormGroup className="form-group--wide form-group" controlId="confirmpassword">
+            <Field name="confirmpassword">
+              {({ field, meta }) => (
+                <FormControl
+                  {...field}
+                  className={meta.error && meta.touched ? "input--error" : ""}
+                  type="password"
+                  placeholder="Confirm password"
+                />
+              )}
+            </Field>
+            <ErrorMessage className="error" name="confirmpassword" component="div" />
+          </FormGroup>
+
           <Button variant="outline-dark" type="submit" disabled={isSubmitting}>
             Register
           </Button>

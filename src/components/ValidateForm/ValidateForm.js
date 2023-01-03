@@ -28,7 +28,10 @@ export const RegisterSchema = Yup.object().shape({
     .min(10, "Password must contain a minimum of 10 characters")
     .max(50, "Password must contain a maximum of 50 characters")
     // .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]/, () => "Password must contain an upper and a lower case letter, a number, and a symbol")
-    .required("Password required")
+    .required("Password required"),
+  confirmpassword: Yup.string()
+    .oneOf([Yup.ref('password'), null], 'Passwords must match')
+    .required('Password confirmation required')
 });
 
 export const ImageUrlSchema = Yup.object().shape({

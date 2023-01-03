@@ -129,6 +129,10 @@ p {
   height: auto;
 }
 
+.form-group {
+  margin-bottom: 1rem;
+}
+
 .form-group--wide {
   width: 90%;
 }
