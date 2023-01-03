@@ -1,0 +1,30 @@
+.frs--container {
+  display: flex;
+  justify-content: center;
+}
+
+.frs--container-inner {
+  position: absolute;
+}
+
+.frs__image {
+  /* height: 60vh; */
+  width: 60vw;
+  max-width: 650px;
+  min-width: 350px;
+  max-height: 65vh;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24); */
+}
+
+.frs--no-border {
+  box-shadow: none;
+}
+
+.frs--bounding-box {
+  position: absolute;
+  box-shadow: 0 0 0 3px #149df2 inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
